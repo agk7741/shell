@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#
+#
+#parh: /root/shell/system_initialize.sh
+#author: agk7741
+#email: x997870394@163.com
+#date: 2019/10
+#usage: system_initialize
+
+systemctl stop firewalld && systemctl disable firewalld
+sed -i s/SELINUX=enfrocing/SELINUX=disabled/g  /etc/selinux/config
+setenforce 0
+
+yum -y install unzip wget lsof net-tools ntpdate vim epel-release
+yum -y groupinstall "Development Tools"
+
+if [ $? -eq 0 ];then
+   exit 0
+else
+   exit 12345
+fi
+
+
