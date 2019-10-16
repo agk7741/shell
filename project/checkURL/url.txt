@@ -1,0 +1,12 @@
+# [China] localtion website.
+www.baidu.com
+www.zhihu.cn
+www.qingcloud.com
+
+# [USA] localtion website.
+www.google.com
+www.facebook.com
+
+# [Californer] location website.
+www.cacaca.com
+www.bybyby.com
